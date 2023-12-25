@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        p{
+            color: yellow;
+            border: 2px solid ;
+            background-color: black;
+        }
+        /* ID selector */
+        #firstpara{
+            /* here by seperate id you can add different colors to different sections written by #id_of_that 
+            ID IS ALWAYS UNIQUE
+            # only works with id*/
+            color:purple;
+        }
+        #secondpara{
+            /* ID has more prefrence than the class  */
+            color: black;
+        }
+
+
+        /* class selectors */
+        .redElement{
+            /* this .redElement is used to set css to the whole class 
+            ONLY WORKS WITH CLASSS NAME */
+            color:red !important;
+        }
+        .bgBlue{
+            background-color: pink;
+        }
+        /* this is a Element selector where you decide what color it shoud be in all the paragraphs at just one command */
+
+        
+        /* Grouping selector */
+        footer, span{
+            background-color: lightblue;
+            border: 2px solid ;
+            /* here no color is provided so it will take default color of text */
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstpara">This is a simple paragraph to demonstrate CSS Selectors</p>
+    <p id="secondpara" class="redElement bgBlue">This is a another simple paragraph to demonstrate CSS Selectors</p>
+    <div>
+        <p>This is yet another simple paragraph inside div to demonstrate CSS Selectors</p>
+        <span>This is span</span>
+    </div>
+    <footer>This is footer</footer>
+</body>
+</html>
