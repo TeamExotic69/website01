@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Grandstander:wght@100&family=Rubik+Scribble&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Foldit', sans-serif;
+            font-family: 'Grandstander', cursive;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            background-color: rgb(230, 194, 252);
+            text-align: center;
+            
+        }
+
+        .item{
+            border: 2px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(255, 214, 214);
+        }
+
+
+        p, h3{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+
+
+        #fruits{
+            float: left;
+            width: 49%;
+        }
+
+
+        #Computers{
+            float: right;
+            width: 49%;
+        }
+
+        #Stationary{
+            /* float: left; */
+
+            /* clear: left; */
+            /* here this clear left means that non of left element is allowed to touch overlap or anything to my Stationary*/
+
+            clear: both;
+            /*here by clear both means neither right nor left element is allowed to touch our element*/
+            width: 99.4%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOMW TO MY STORE</h1>
+        <div id="fruits" class="item">
+            <h3>FRUITS</h3>
+            <p id="fruitsPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ab porro voluptatibus illo saepe velit maiores repellat neque. Veritatis nemo illum voluptatibus aliquid assumenda eaque, magni nisi so Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quis itaque facilis, eveniet a aliquam voluptate magnam nobis rerum iure magni aliquid expedita molestias temporibus maxime amet. Quos maxime, fuga illo corrupti deleniti laudantium! luta blanditiis iusto.</p>
+        </div>
+
+        <div id="Computers" class="item">
+            <h3>COMPUTERS</h3>
+            <p id="ComputersPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vero aliquam soluta dolores enim distinctio minus autem illum ratione. Commodi aperiam sint, error voluptates adipisci vero consequuntur debitis ullam reiciendis sunt, qui, aut sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ab porro voluptatibus illo saepe velit maiores repellat neque. Veritatis nemo illum voluptatibus aliquid assumenda eaque, magni nisi soluta blanditiis iusto.</p>
+        </div>
+
+        <div id="Stationary" class="item">
+            <h3>STATIONARY</h3>
+            <p id="StationaryPara" class="para">Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores iure impedit tempora architecto voluptatem facilis iusto deserunt aliquid obcaecati mollitia, nulla veniam error ratione debitis eos! Quisquam voluptates atque sint optio perspiciatis molestiae aliquid. dolor sit amet consectetur adipisicing elit. Maxime, ab porro voluptatibus illo saepe velit maiores repellat neque. Veritatis nemo illum voluptatibus aliquid assumenda eaque, magni nisi soluta blanditiis iusto.</p>
+        </div>
+
+        <div id="Glasses" class="item">
+            <h3>GLASSES</h3>
+            <p id="GlassesPara" class="para">Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores iure impedit tempora architecto voluptatem facilis iusto deserunt aliquid obcaecati mollitia, nulla veniam error ratione debitis eos! Quisquam voluptates atque sint optio perspiciatis molestiae aliquid. dolor sit amet consectetur adipisicing elit. Maxime, ab porro voluptatibus illo saepe velit maiores repellat neque. Veritatis nemo illum voluptatibus aliquid assumenda eaque, magni nisi soluta blanditiis iusto.</p>
+        </div>
+    </div>
+</body>
+</html>
