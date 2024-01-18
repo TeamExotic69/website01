@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: rgb(220 162 162);
+            border-radius: 4px;
+        }
+        /* here bgcolor is not showing because when we float something it overfows through parentk */
+        .navbar ul{
+            overflow: auto;
+            /* as we set this overflow auto our bgcolor will be visible */
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 15px 25px 14px;
+            /* border: 0.5px solid black; */
+        }
+        .navbar li a{
+            /* padding: 3px,3px; */
+            text-decoration: none;/*here this will remove underline or anything to our text*/
+            color: rgb(0, 0, 0);
+        }
+        .navbar li a:hover{
+            background-color: rgb(208, 98, 98);
+            box-sizing: border-box;
+
+        }
+        .search{
+            float: right;
+            /* this float will move your box to the selected opsition */
+            padding: 13px 0px ;
+            color: white;
+            margin: 0px 58px;
+        }
+        .navbar input{
+            border: 0.5px solid black;
+            border-radius: 4px;
+            padding: 3px;
+            width: 129px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search this Website">
+                <!-- here placeholder will show the text in the box -->
+            </div>
+        </ul>
+        </nav>
+    </header>
+</body>
+</html>

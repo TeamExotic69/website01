@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Pseudo Selectors & more Designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: azure;
+            padding: 34px;
+            margin: 34px auto;/* 34px is on y-axcis auto on x-axcis*/
+            width: 666px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{/*this is when cursor is on the button */
+            color: rgb(24, 4, 124) ;
+            background-color: rgb(179, 179, 179);
+            border: 0.01px solid black;
+        }
+        a:visited{/*this is when once you have visited that link */
+            color: rgb(12, 0, 72);
+            /* background-color: rgb(64, 255, 0); */
+        }
+
+
+
+        button:hover{/*this is when cursor is on the button */
+            color: rgb(0, 0, 0) ;
+            background-color: rgb(179, 179, 179);
+            border: 0.01px solid black;
+        }
+        button:visited{/*this is when once you have visited that link */
+            color: rgb(12, 0, 72);
+            /* background-color: rgb(64, 255, 0); */
+        }
+
+
+
+
+        .btn{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            background-color: rgb(203, 203, 203);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="count1">
+        <h3>This is my Heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum dolorem dolor ea nemo quam modi aliquam qui unde quidem laboriosam beatae distinctio aut veniam quod similique, magni voluptate officia eos et. Praesentium, beatae laboriosam!</p>
+        <a href="https://google.com" class="btn" target="_blank">Read more</a>
+        <!-- here target="_blank" this will redirect you to the next tab  -->
+        <button class="btn">Contact us</button>
+    </div>   
+</body>
+</html>

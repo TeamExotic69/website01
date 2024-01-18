@@ -1,0 +1,6 @@
+/* syntax: p{color:blue;}
+            here p is where you want to add this color  */
+p{
+    color: white !important;
+    background-color: seagreen;
+}

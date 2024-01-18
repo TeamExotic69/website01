@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>please Fill this </h2>
+    <form action="backend.php">
+        <!-- we don't have anything at backend.php so it will show error when submitted -->
+        <label for="Name">Name:</label>
+        <div>
+            <input type="text" value="by using value" name="myName" id="Name">
+        </div><br>
+        <label for="Role">Role:</label>
+        <div>
+            <input type="text" name="myRole" id="Role">
+        </div>
+        <!-- Avoid using <br> tag use <div></div> tag  -->
+        <!-- we will set these things with the help of css -->
+        <!-- <lable> tag is used to dacurate by just clicking on name you can enter name    and they are always used above the <div> tag and you have to give same id="same" in for="same"-->
+        <br>
+        <label for="Email">Email:</label>
+        <div>
+            <input type="email" name="myEmail" id="Email">
+        </div><br>
+        <label for="Contact">Contact:</label>
+        <div>
+            <input type="text" name="myContact"id="Contact">
+        </div>
+        <br>
+        <label for="Date">Date:</label>
+        <div>
+            <input type="date" name="myDate" id="Date">
+        </div>
+        <br>
+        <label for="Bonus">Bonus:</label>
+        <div>
+            <input type="number" name="myBonus" id="Bonus">
+         </div>
+         <br>
+         <label for="Eligibility">Are You Eligible?</label>
+         <div>
+            <input type="checkbox" name="myEligibility" checked id="Eligibility">
+        </div>
+        <br>
+        <label for="Gender">Gender:</label>
+        <div>
+            Male<input type="radio" name="myGender" id="Gender">
+            Female<input type="radio" name="myGender">
+            Other<input type="radio" name="myGender" >
+            <!-- here only  one radio will be selected at a time beecause we have given all options same name -->
+        </div>
+        <br>
+        <label for="Text">Write about yourself:</label>
+        <div>
+           <br><textarea name="myText" cols="50" rows="1" id="Text"></textarea>
+       </div>
+       <BR>
+       <div>
+           <label for="car">Car:</label>
+           <select name="myCar" id="car">
+               <option value="NO" selected>Select </option>
+               <option value="ind">INDICA</option>
+               <option value="kia">KIA</option>
+               <option value="SWFT">SWIFT</option>
+           </select>
+       </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

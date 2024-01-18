@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID's and Classes</title>
+</head>
+
+<body>
+    <h3><!--you can not use id="mainBox" here-->IDs and classes tutorial</h3>
+    <!-- ID is an identifire it should be unique in same page non of the id can be repeated -->
+    <!-- only one element can have one id -->
+    <!-- multiple classes can be given in class with space in between -->
+    <div id="mainBox" class="redBg blackBorder">
+        This is mainBox
+    </div>
+    <!-- redBg class can be given anywhere but that id is reserved -->
+    <span class="redBg"></span>
+    <!-- --------Emmet-------- is shortcut to write html fast-->
+    <!-- type span.redbg and ENTER to get below line -->
+    <span class="redBg"></span>
+    <!-- type span#mainSpan and ENTER to get this line -->
+    <span id="mainSpan"></span>
+    <!-- conclusion -->
+    <!-- . is for CLASS and # is for ID -->
+    <!-- you can add many classes like div.redBg.blackBorder.anothherclass. and enter -->
+    <div class="redBg blackBorder anotherclass"></div>
+    <!-- "Emmet takes div tag as default"-------This means if you type .blackBackground and ENTER it will add div by default -->
+    <div class="blackBackground"></div>
+
+    <!-- Creating multiple elements using Emmet -->
+    <!-- span.myClass.myclass2.myclass3. + <tab> -->
+    <span class="myClass myclass2 myclass3"></span>
+    <!-- span.myClass.myclass2.myclass3*4 +<tab> to print similer elements using Emmet-->
+    <span class="myClass myclass2 myclass3">First</span>
+    <snap class="myClass myclass2 myclass3">Second</span>
+    <span class="myClass myclass2 myclass3">Third</span>
+    <span class="myClass myclass2 myclass3">fourth</span>
+    <!-- we will get to know about classes and IDS in css later -->
+</body>
+
+</html>
